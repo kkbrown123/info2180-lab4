@@ -2,7 +2,6 @@
 document.addEventListener("DOMContentLoaded", function (){
     var button = document.querySelector('button');
     var url = "superheroes.php?name=";
-    const httpRequest = new XMLHttpRequest(); 
     button.addEventListener("click",function(event){
         
         fetch(url)
@@ -12,8 +11,6 @@ document.addEventListener("DOMContentLoaded", function (){
         }).catch(error => {
                 alert('Error fetching data:', error);
             });
-
-
     });
 
 });
