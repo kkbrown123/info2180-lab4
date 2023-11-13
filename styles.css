@@ -79,3 +79,13 @@ footer {
 }
 
 
+@media screen and (max-width: 600px) {
+    form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    input {
+        margin-bottom: 10px;
+    }
+}
